@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+type livro struct {
+	titulo string
+	autor  string
+	publi  int
+}
+
+func media(s []int) {
+
+}
+
+func livrocplt(p livro) {
+	fmt.Println("titulo", p.titulo)
+	fmt.Println("autor", p.autor)
+	fmt.Println("publi", p.publi)
+}
+func main() {
+	p := livro{}
+	imprimalivro := livro{
+		"George Orweell", "George orwell", 1984,
+	}
+
+	livrocplt(imprimalivro)
+}
