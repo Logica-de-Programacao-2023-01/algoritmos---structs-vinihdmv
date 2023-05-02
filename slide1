@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+type Retangulo struct {
+	largura float64
+	altura  float64
+}
+
+func calarea(alt, lag float64) float64 {
+	return alt * lag
+}
+
+func main() {
+	p := Retangulo{}
+	fmt.Println("Escreva  um valor da altura e da largura do seu retangulo")
+	fmt.Scan(&p.altura)
+	fmt.Scan(&p.largura)
+	fmt.Println("altura", p.altura)
+	fmt.Println("altura", p.largura)
+	fmt.Print("Area:")
+	fmt.Println(calarea(p.altura, p.altura))
+}
