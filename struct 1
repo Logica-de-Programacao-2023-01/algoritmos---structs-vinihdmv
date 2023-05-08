@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+type circulo struct {
+	raio float64
+}
+
+func (c circulo) calccirculo() float64 {
+	calculo := 3.14 * c.raio * c.raio
+	return calculo
+}
+
+func main() {
+	raio := circulo{12}
+	fmt.Println(raio.calccirculo())
+}
