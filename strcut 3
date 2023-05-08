@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+type triangulo struct {
+	base   float64
+	altura float64
+}
+
+func (t triangulo) calctriangulo() float64 {
+	calculo := t.base * t.altura
+	return calculo
+}
+
+func main() {
+
+	triangulo := triangulo{23, 34}
+	fmt.Println("A area é", triangulo.calctriangulo())
+}
