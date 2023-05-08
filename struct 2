@@ -1,0 +1,36 @@
+package main
+
+import "fmt"
+
+type Endereco struct {
+	rua    string
+	numero int
+	cidade string
+	estado string
+}
+
+type Pessoa struct {
+	nome     string
+	idade    int
+	endereco Endereco
+}
+
+func imprimeEndereco(p Pessoa) {
+	fmt.Printf(p.endereco.rua, p.endereco.numero, p.endereco.cidade, p.endereco.estado)
+}
+
+func main() {
+
+	p := Pessoa{
+		nome:  "vini",
+		idade: 50,
+		endereco: Endereco{
+			rua:    "Rua 208 bloco i",
+			numero: 605,
+			cidade: "bss",
+			estado: "df",
+		},
+	}
+
+	imprimeEndereco(p)
+}
